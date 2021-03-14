@@ -4,7 +4,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Company', link: 'www.vti.sint-rembert.be' },
+      { text: 'Company', link: 'https://stem-ict.be/' },
       { text: 'License', link: '/LICENSE.md' },
     ],
     sidebar: [
