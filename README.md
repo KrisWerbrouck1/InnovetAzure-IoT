@@ -51,8 +51,6 @@ Meer uitleg over cloud computing kan je nalezen op
 
 ![](media/494f5fcf240aa25b26d446e022ca77ce.png)
 
-Figuur 1: Azure portal
-
 Er zijn een aantal modellen mogelijk. Zowel SaaS (Software as a Service), Paas
 (Platform as a Service) en IaaS (Infrastructure as a Service) zijn mogelijk met
 Azure
@@ -63,6 +61,7 @@ Azure
 cloudtenants.](media/49215cd1654e32ec2a6703d8a6cdb690.png)
 
 | **On-Premises** | Dit is geen cloudmodel. Alle servers, software, data en applicaties staan bij de gebruiker.  |
+| -------------------------- |-----------------------------------------------------------------|
 
 | **IaaS**        | Dit cloudservicemodel komt het dichtst in de buurt van het beheren van fysieke servers. Een cloudprovider houdt de hardware up-to-date, maar het onderhoud van het besturingssysteem en de netwerkconfiguratie blijft een taak van de gebruiker. Een voordeel van dit cloudservicemodel is de snelle implementatie van nieuwe toestellen. Het instellen van een nieuwe virtuele machine gaat aanzienlijk sneller dan het aanschaffen, installeren en configureren van een fysieke server. |
 | **PaaS**        | Dit cloudservicemodel is een beheerde hostingomgeving. De cloudprovider beheert de virtuele machines en netwerkresources en de gebruiker implementeert de bijbehorende toepassingen in de beheerde hostingomgeving. |
@@ -433,7 +432,7 @@ stukje code aan:
 
 De totale code:
 
-``python
+```python
 import asyncio
 import os
 from azure.iot.device.aio import IoTHubDeviceClient, ProvisioningDeviceClient
