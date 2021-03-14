@@ -6,7 +6,7 @@ In deze cursus gaan we data afkomstig van een IoT-device (microcontroller,
 raspberry pi, ..) bewaren en visualiseren op een dashboard. Eveneens is het
 mogelijk een actuator te bedienen vanop het dashboard.
 
-[](./assets/08f05638e9d367934c610eb63ad1608d.png)
+![](./assets/08f05638e9d367934c610eb63ad1608d.png)
 
 # Inleiding
 
@@ -49,16 +49,15 @@ Meer uitleg over cloud computing kan je nalezen op
 
 ## De portal van de azure cloud omgeving
 
-[](./assets/494f5fcf240aa25b26d446e022ca77ce.png)
+![](./assets/494f5fcf240aa25b26d446e022ca77ce.png)
 
 Er zijn een aantal modellen mogelijk. Zowel SaaS (Software as a Service), Paas
 (Platform as a Service) en IaaS (Infrastructure as a Service) zijn mogelijk met
 Azure
 
-[](./assets/bef1673d6514288c44d8c850866a80d3.png)
+![](./assets/bef1673d6514288c44d8c850866a80d3.png)
 
-![Grafiek met de gedeelde verantwoordelijkheden van cloudproviders en
-cloudtenants.figuur](./assets/49215cd1654e32ec2a6703d8a6cdb690.png)
+![](./assets/49215cd1654e32ec2a6703d8a6cdb690.png)
 
 ### On-Premises 
 Dit is geen cloudmodel. Alle servers, software, data en applicaties staan bij de gebruiker.
@@ -82,19 +81,19 @@ Registreer je met je e-mailadres van school. Wanneer je registreert met een
 ander e-mailadres, krijg je de vraag om met het e-mailadres van de school te
 registeren.
 
-[](./assets/62d297c9ab6687d4b80a1cc365aba6e2.png)
+![](./assets/62d297c9ab6687d4b80a1cc365aba6e2.png)
 
 Vul je telefoonnummer in als verificatie.
 
-[](./assets/2732bef4b83dadd26be838012d396e03.png)
+![](./assets/2732bef4b83dadd26be838012d396e03.png)
 
 Registreer je
 
-[](./assets/74ab47a78c5de8598fba159945c342e5.png)
+![](./assets/74ab47a78c5de8598fba159945c342e5.png)
 
 Ga akkoord met de voorwaarden.
 
-[](./assets/25ef2cc500229433cedf669b34edda08.png)
+![](./assets/25ef2cc500229433cedf669b34edda08.png)
 
 # Resourcegroep
 
@@ -103,24 +102,24 @@ database, …) moet er een resourcegroep aangemaakt worden.
 
 Kies + Een resource maken
 
-[](./assets/cb91768b6e0b4b6cc18e4d624a823e99.png)
+![](./assets/cb91768b6e0b4b6cc18e4d624a823e99.png)
 
 Geef in het zoekvenster Resourcegroep in
 
-[](./assets/b52c17b676b69883eb728421a18bc46f.png)
+![](./assets/b52c17b676b69883eb728421a18bc46f.png)
 
 Klik op Maken
 
-[](./assets/fbfe568b86a3355d54e094b270a98848.png)
+![](./assets/fbfe568b86a3355d54e094b270a98848.png)
 
 Geef de resourcegroep een zelfgekozen naam en kies de dichtste locatie om de
 resourcegroep te bewaren.
 
-[](./assets/ce8a9ffb4e6c4d51587da3705d09f7b3.png)
+![](./assets/ce8a9ffb4e6c4d51587da3705d09f7b3.png)
 
 Klik vervolgens op Beoordelen en maken.
 
-[](./assets/2def2ce6162b4121b9379a904c0aaf53.png)
+![](./assets/2def2ce6162b4121b9379a904c0aaf53.png)
 
 # Azure IoT-Central
 
@@ -130,11 +129,11 @@ naar Azure IoT-Cental. De data wordt vervolgens weergegeven op een dashboard.
 Nadien ben je in staat om data met een andere sensor door te sturen naar
 IoT-Central en de data weer te geven op het dashboard.
 
-[](./assets/9bfd053cc105f0726f41db12e536affa.png)
+![](./assets/9bfd053cc105f0726f41db12e536affa.png)
 
 Met het gratis pakket kunnen 30 000 berichten per maand verzonden worden.
 
-[](./assets/84f9a833c2fba26ba5f04b5be0843341.png)
+![](./assets/84f9a833c2fba26ba5f04b5be0843341.png)
 
 # Aanmaak IoT-Central
 
@@ -143,15 +142,15 @@ Azure IOT-Central is een cloud applicatie (SaaS).
 Maak deze cloud applicatie aan door in de portal te klikken op “+ Een resource
 maken”.
 
-[](./assets/cb91768b6e0b4b6cc18e4d624a823e99.png)
+![](./assets/cb91768b6e0b4b6cc18e4d624a823e99.png)
 
 Geef in het zoekvenster “IoT Central application” in:
 
-[](./assets/e5f1aadfd57d3d72d70ee33dd21c2308.png)
+![](./assets/e5f1aadfd57d3d72d70ee33dd21c2308.png)
 
 Klik op Maken.
 
-[](./assets/ab75efa84350579f76ebd08fe39b20c0.png)
+![](./assets/ab75efa84350579f76ebd08fe39b20c0.png)
 
 Vul een zelfgekozen Resourcenaam in. De URL wordt vervolgens gebaseerd op de
 Resourcenaam. Selecteer het studentenabonnement en de vooraf aangemaakte
@@ -159,24 +158,24 @@ Resourcegroep.
 
 Kies voor aangepaste toepassing als sjabloon en de dichtste locatie.
 
-[](./assets/cbc36ea270a2b056bdb1d1b4dff32202.png)
+![](./assets/cbc36ea270a2b056bdb1d1b4dff32202.png)
 
 Wanneer alles goed gelukt is krijg je de melding dat de implementatie goed
 gelukt is.
 
-[](./assets/a434d2b2b4a8e688809a27e014c0b1e2.png)
+![](./assets/a434d2b2b4a8e688809a27e014c0b1e2.png)
 
 Selecteer in de Azure portal in IoT-Central-toepassing.
 
-[](./assets/66b884628551edd9a134b979ca7350ec.png)
+![](./assets/66b884628551edd9a134b979ca7350ec.png)
 
 Klik op de URL van de aangemaakte toepassing.
 
-[](./assets/4e1944b80ccaa191abdad00b0befc266.png)
+![](./assets/4e1944b80ccaa191abdad00b0befc266.png)
 
 Je komt op de portal van de aangemaakte IoT Central toepassing.
 
-[](./assets/c9766b2ec1a2497e45ba38f457cbd36f.png)
+![](./assets/c9766b2ec1a2497e45ba38f457cbd36f.png)
 
 ## Aanmaken Apparaatsjabloon
 
@@ -185,24 +184,24 @@ Voor een nieuw IoT-device moet eerst een sjabloon apparaat aangemaakt worden.
 Maak een Apparaatsjabloon aan door op Apparaatsjablonen te klikken in de linker
 balk. Kies vervolgens “+Nieuw”.
 
-[](./assets/8a80e6d102e0a5510db3cf642a032205.png)
+![](./assets/8a80e6d102e0a5510db3cf642a032205.png)
 
 Kies als type “IoT-apparaat” en klik op “Volgende: Aanpassen”.
 
-[](./assets/03df1ede7f61a411e84435e6cc67da75.png)
+![](./assets/03df1ede7f61a411e84435e6cc67da75.png)
 
 Voer een zelfgekozen naam in voor het apparaatsjabloon en klik op Volgende:
 Beoordelen.
 
-[](./assets/a13e809337d04c9e318877f3df8b8125.png)
+![](./assets/a13e809337d04c9e318877f3df8b8125.png)
 
 Klik op “Maken”.
 
-[](./assets/5cfe05e919214aae6820a440cce20f0d.png)
+![](./assets/5cfe05e919214aae6820a440cce20f0d.png)
 
 Wanneer het sjabloon aangemaakt is krijg je bevestiging.
 
-[](./assets/d20a0bd3b1e445110206af545fa3bdaf.png)
+![](./assets/d20a0bd3b1e445110206af545fa3bdaf.png)
 
 ## Interface toevoegen
 
@@ -212,23 +211,23 @@ voorzien we het inlezen van 2 sensorenwaardes.
 
 Klik op Aangepast model.
 
-[](./assets/aa50a94dbc806e4823e551106aa9a6ed.png)
+![](./assets/aa50a94dbc806e4823e551106aa9a6ed.png)
 
 Klik op “Mogelijkheid toevoegen aan standaardonderdeel” en vul de gekozen
 weergavenaam in. Wanneer je sensordata wil inlezen staat “Type van …” op
 Telemetry. Het is eveneens mogelijk een eenheid toe te voegen. Dit is echter
 geen verplichting.
 
-[](./assets/36e61f89bef7a980dbe11677908227fe.png)
+![](./assets/36e61f89bef7a980dbe11677908227fe.png)
 
 Klik op “+ Een mogelijkheid toevoegen” om de 2de waarde van de interface toe te
 voegen.
 
-[](./assets/eeda3ca3103e3e12e53827f9be4a4f81.png)
+![](./assets/eeda3ca3103e3e12e53827f9be4a4f81.png)
 
 Indien we een actuator toevoegen moet je “Telemetry” aanpassen naar “Command”.
 
-[](./assets/c62fd1869e0769aeac5d9e6ec26e279f.png)
+![](./assets/c62fd1869e0769aeac5d9e6ec26e279f.png)
 
 Klik op “Opslaan” om de interface te bewaren.
 
@@ -236,36 +235,36 @@ Klik op “Opslaan” om de interface te bewaren.
 
 Kies onder “Weergave” op “Het apparaat visualiseren”.
 
-[](./assets/1d5a1daa3267a67f3e49e019d9fe7211.png)
+![](./assets/1d5a1daa3267a67f3e49e019d9fe7211.png)
 
 Voeg de grafische weergave toe onder Telemetrie. Klik vervolgens op “Tegel
 toevoegen”.
 
-[](./assets/120b5dc777ec7ba70dfb15719c165829.png)
+![](./assets/120b5dc777ec7ba70dfb15719c165829.png)
 
 Wanneer alles waardes toegevoegd zijn klik je op “Opslaan”.
 
-[](./assets/f310f36306024fa8d8cb98f81e18aae0.png)
+![](./assets/f310f36306024fa8d8cb98f81e18aae0.png)
 
 Voor het sjabloon bruikbaar is moet dit gepubliceerd worden. Klik hiervoor op
 “Publiceren”.
 
-[](./assets/25af427adcc885a0fdea5bc481d029cc.png)
+![](./assets/25af427adcc885a0fdea5bc481d029cc.png)
 
 Klik nogmaals op “Publiceren”.
 
-[](./assets/9ae022fd294fe5372c4a1edde08c200a.png)
+![](./assets/9ae022fd294fe5372c4a1edde08c200a.png)
 
 ## Aanmaken apparaat
 
 Maak vanuit het sjabloon een nieuw apparaat aan. Klik op “+ Nieuw” in Alle
 apparaten.
 
-[](./assets/29277cf41fd2e55d35c1a39851bc3a75.png)
+![](./assets/29277cf41fd2e55d35c1a39851bc3a75.png)
 
 Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 
-[](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
+![](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
 
 # Arduino code
 
@@ -274,7 +273,7 @@ naar Azure IOT-Central.
 
 De voorbeeldcode is gebaseerd op <https://github.com/Azure/iot-central-firmware>
 Download eventueel de volledige repository en unzip
-deze.[](./assets/a91f4249a1bf3b1ccd47dc2fcbb2d639.png)
+deze.![](./assets/a91f4249a1bf3b1ccd47dc2fcbb2d639.png)
 
 De voorbeeldcode voor de esp8266 is te vinden onder het pad ESP8266. Het arduino
 bestand is esp8266.ino. De nodige bestanden in de scr map moeten zeker altijd
@@ -298,12 +297,12 @@ const char* DEVICE_KEY = "<ENTER DEVICE primary/secondary KEY HERE>";
 De gegevens van het apparaat zijn te vinden in IoT-Central onder « Verbinding
 met »:
 
-[](./assets/a959263696de15863df868ee3a3b996d.png)
+![](./assets/a959263696de15863df868ee3a3b996d.png)
 
 Vul het « id-bereik », de « Apparaat-id » en de « primaire sleutel » in de
 arduino code in.
 
-[](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
+![](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
 
 Een voorbeeldprogramma met 2 tellers. Indien je andere waardes wil doorsturen in
 een praktische toepassing pas je volgende stukje code aan:
@@ -415,17 +414,17 @@ Bron: Dieter De Preester docent HoWest MCT
 
 Installeer op de raspberry pi met pip3 de azure-iot-device lib.
 
-[](./assets/111c7ae4a7e3c9213cb67994980e9729.png)
+![](./assets/111c7ae4a7e3c9213cb67994980e9729.png)
 
 De gegevens van het apparaat zijn te vinden in IoT-Central onder « Verbinding
 met »:
 
-[](./assets/a959263696de15863df868ee3a3b996d.png)
+![](./assets/a959263696de15863df868ee3a3b996d.png)
 
 Vul het « id-bereik », de « Apparaat-id » en de « primaire sleutel » in de
 arduino code in.
 
-[](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
+![](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
 
 Een voorbeeldprogramma waarbij een random temperatuur doorgezonden wordt. Indien
 je andere waardes wil doorsturen in een praktische toepassing pas je volgende
@@ -562,9 +561,9 @@ In onderstaande voorbeeld wordt:
 
 -   De leds op het sense HAT bediend vanuit het IoT-Central dashboard
 
-[](./assets/619de9b9928d99030229eaaf8f9cae1f.png)
+![](./assets/619de9b9928d99030229eaaf8f9cae1f.png)
 
-[](./assets/5dbc26e1f3d6d92aeb846cc40d746baa.png)
+![](./assets/5dbc26e1f3d6d92aeb846cc40d746baa.png)
 
 De uitwerking is gebaseerd op volgende document
 <https://pietrobrambati.blog/2020/08/21/sending-commands-from-azure-iot-central-to-raspberry-pi-with-sense-hat-in-node-red/>
@@ -581,59 +580,59 @@ te voeren:
 ## Importeren van modules in node red
 
 Voeg de bibliotheek voor azure-iot-central toe. Klik op de 3 horizontale strepen
-rechtsboven en kies “Settings” [](./assets/b397366062b4f04d946f19471df419c1.png)
+rechtsboven en kies “Settings” ![](./assets/b397366062b4f04d946f19471df419c1.png)
 
 Kies “Palette” in de user Settings en vervolgens het tabblad “Install”
 
-[](./assets/5e219896ae2adb2a4be05192587c5e2d.png)
+![](./assets/5e219896ae2adb2a4be05192587c5e2d.png)
 
 Geef bij “search modules” “Iot-Central” in klik op “install” bij
 node-red-contrib-azure-iot-central.
 
-[](./assets/3177b1c6a198589ca4d3ac1836d2c715.png)
+![](./assets/3177b1c6a198589ca4d3ac1836d2c715.png)
 
 Klik terug op Install.
 
-[](./assets/e05b643e5535f105ae125b715306c70e.png)
+![](./assets/e05b643e5535f105ae125b715306c70e.png)
 
 Voeg de bibliotheek voor azure-iot-central toe. Klik op de 3 horizontale strepen
-rechtsboven en kies “Settings” [](./assets/b397366062b4f04d946f19471df419c1.png)
+rechtsboven en kies “Settings” ![](./assets/b397366062b4f04d946f19471df419c1.png)
 
 Kies “Palette” in de user Settings en vervolgens het tabblad “Install”
 
-[](./assets/5e219896ae2adb2a4be05192587c5e2d.png)
+![](./assets/5e219896ae2adb2a4be05192587c5e2d.png)
 
 Geef bij “search modules” “Sensehat” in klik op “install” bij
 node-red-pi-sense-hat.
 
-[](./assets/964d4bfa84d46dbeb9f7860e360beb7a.png)
+![](./assets/964d4bfa84d46dbeb9f7860e360beb7a.png)
 
 Klik terug op Install.
 
-[](./assets/a150d913932cccb87e60dbbf782a43f3.png)
+![](./assets/a150d913932cccb87e60dbbf782a43f3.png)
 
 Kies import in node-red.
 
-[](./assets/52d0dd148a25a756857d7d3866249f1b.png)
+![](./assets/52d0dd148a25a756857d7d3866249f1b.png)
 
 Kopieer de json string van
 <https://github.com/pietrobr/node-red-contrib-azure-iot-central/blob/master/samples/flow%20SenseHAT%20commands.json>
 
-[](./assets/e41a6407ed200ae6d61875d95741014f.png)
+![](./assets/e41a6407ed200ae6d61875d95741014f.png)
 
 Plaats de json string in node red en klik op “Import”.
 
-[](./assets/32928cb8782172fab729e2c2aa241ee1.png)
+![](./assets/32928cb8782172fab729e2c2aa241ee1.png)
 
 ## Azure IoT-Central
 
 Maak een nieuw apparaatsjabloon aan met een zelfgekozen naam.
 
-[](./assets/c6368fc57f6c6799fa9baea7fa52274c.png)
+![](./assets/c6368fc57f6c6799fa9baea7fa52274c.png)
 
 Voorzie de interface door op “Aangepast model” te klikken.
 
-[](./assets/718a32f8caa43dd851693b40c04e676f.png)
+![](./assets/718a32f8caa43dd851693b40c04e676f.png)
 
 Vul de weergavenaam en de eenheid in voor:
 
@@ -647,62 +646,62 @@ Vul de weergavenaam en de eenheid in voor:
 
 -   turnLedOff bediening actuator Command
 
-[](./assets/a79e1ebc7e67ef39be386caa2c004838.png)
+![](./assets/a79e1ebc7e67ef39be386caa2c004838.png)
 
-[](./assets/f300fa393d6e3e6d276a254f5bcdd049.png)
+![](./assets/f300fa393d6e3e6d276a254f5bcdd049.png)
 
 Klik op “Opslaan”
 
-[](./assets/d5f8b51b34d02399b489ce86e5e73f94.png)
+![](./assets/d5f8b51b34d02399b489ce86e5e73f94.png)
 
 ## Visualisatie
 
 Klik op “Het apparaat visualiseren”
 
-[](./assets/fe1f8b2d0451546015849b15a5021a3d.png)
+![](./assets/fe1f8b2d0451546015849b15a5021a3d.png)
 
 Voeg voor de temperatuur, de luchtdruk en de luchtvochtigheid een tegel toe door
 de grootheid te selecteren onder Telemetrie en vervolgens op “Tegel toevoegen”
 te klikken.
 
-[](./assets/53877c5198cec68fd6cf26d86fa7b14a.png)
+![](./assets/53877c5198cec68fd6cf26d86fa7b14a.png)
 
 Voeg de bediening toe door bij Opdrachten de bediening te slecteren.
 
-[](./assets/4d97b20f7da5df62d41c8b3237410284.png)
+![](./assets/4d97b20f7da5df62d41c8b3237410284.png)
 
 Wanneer alle tegels toegevoegd zijn klik je op “Opslaan” en vervolgens op
 “Publiceren”.
 
-[](./assets/1d6e13c7ca304d3182352cbcfddd7c4a.png)
+![](./assets/1d6e13c7ca304d3182352cbcfddd7c4a.png)
 
 Voeg het device toe door op “+Nieuw” te klikken.
 
-[](./assets/31b801670821900fcfea1eb72c9b88f1.png)
+![](./assets/31b801670821900fcfea1eb72c9b88f1.png)
 
 Selecteer het aangemaakte sjabloon.
 
-[](./assets/f6766c26db3c7c4f67dab8d44abb60bb.png)
+![](./assets/f6766c26db3c7c4f67dab8d44abb60bb.png)
 
 ## Instellingen in node-red
 
 Dubbelklik op
 
-[](./assets/5322e4fa9d21c23b5f327a630b392b27.png)
+![](./assets/5322e4fa9d21c23b5f327a630b392b27.png)
 
 Vul de Scope ID, Device ID en Primary Key afkomstig van IoT-Central in.
 
-[](./assets/8485ab12ba86c904e82b16ab3750edd7.png)
+![](./assets/8485ab12ba86c904e82b16ab3750edd7.png)
 
 Pas eventueel de tijd aan om berichten door te sturen.
 
-[](./assets/9c32a337d0a7dada4b3c7615165feca3.png)
+![](./assets/9c32a337d0a7dada4b3c7615165feca3.png)
 
 # Alarmen instellen
 
 Kies “Regels”
 
-[](./assets/5d71484eed390371a47de2a69af57aa8.png)
+![](./assets/5d71484eed390371a47de2a69af57aa8.png)
 
 Kies om een nieuwe regel in te stellen. Druk op “+Nieuw”
 
@@ -714,19 +713,19 @@ Kies om een nieuwe regel in te stellen. Druk op “+Nieuw”
 
 -   Kies een actie
 
-[](./assets/5b1dac18fa7509b086f33d4eeee7f2d5.png)
+![](./assets/5b1dac18fa7509b086f33d4eeee7f2d5.png)
 
 # Gebruikers
 
 De data kan zichtbaar gemaakt worden voor andere gebruikers. Kies “Beheer” en
 vervolgens “Gebruikers”
 
-[](./assets/72504b71b69b3bc029c801ed24debfb2.png)
+![](./assets/72504b71b69b3bc029c801ed24debfb2.png)
 
 Klik op “+ Nieuwe gebruiker” vul het email adres in van de gebruiker en kies
 zijn rol.
 
-[](./assets/52e803dbf087bd30784a170dc53929ef.png)
+![](./assets/52e803dbf087bd30784a170dc53929ef.png)
 
 
 ## License
