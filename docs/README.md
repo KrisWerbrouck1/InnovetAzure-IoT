@@ -1,6 +1,6 @@
 # IoT Central
 
-# Doelstelling
+## Doelstelling
 
 In deze cursus gaan we data afkomstig van een IoT-device (microcontroller,
 raspberry pi, ..) bewaren en visualiseren op een dashboard. Eveneens is het
@@ -8,7 +8,7 @@ mogelijk een actuator te bedienen vanop het dashboard.
 
 ![figuur](./assets/08f05638e9d367934c610eb63ad1608d.png)
 
-# Inleiding
+## Inleiding
 
 Azure is de cloud computing omgeving van Microsoft. Bij de cloud denken we
 meestal aan het online bewaren van data (foto’s, documenten, .. ) bij One Drive,
@@ -72,7 +72,7 @@ Dit cloudservicemodel is een beheerde hostingomgeving. De cloudprovider beheert 
 ### SaaS
 In dit cloudservicemodel beheert de cloudprovider alle aspecten van de toepassingsomgeving, zoals virtuele machines, netwerkresources, gegevensopslag en toepassingen. De gebruiker hoeft alleen maar de gegevens op te geven bij de toepassing die door de cloudprovider wordt beheerd. 
 
-#  Registratie Azure
+##  Registratie Azure
 
 Een gratis studentenaccount kan aangemaakt worden op
 <https://azure.microsoft.com/nl-nl/free/students/>
@@ -95,7 +95,7 @@ Ga akkoord met de voorwaarden.
 
 ![figuur](./assets/25ef2cc500229433cedf669b34edda08.png)
 
-# Resourcegroep
+## Resourcegroep
 
 Wanneer je iets wil maken in Azure (Virtuele server, IoT-Hub, IoT-Central,
 database, …) moet er een resourcegroep aangemaakt worden.
@@ -121,7 +121,7 @@ Klik vervolgens op Beoordelen en maken.
 
 ![figuur](./assets/2def2ce6162b4121b9379a904c0aaf53.png)
 
-# Azure IoT-Central
+## Azure IoT-Central
 
 Azure IoT-Central maakt gebruik van het SaaS (Software as a Service) model. In
 deze cursus stuurt een IoT-apparaat (ESP8266, ESP32 of raspberry pi) data door
@@ -135,7 +135,7 @@ Met het gratis pakket kunnen 30 000 berichten per maand verzonden worden.
 
 ![figuur](./assets/84f9a833c2fba26ba5f04b5be0843341.png)
 
-# Aanmaak IoT-Central
+## Aanmaak IoT-Central
 
 Azure IOT-Central is een cloud applicatie (SaaS).
 
@@ -266,7 +266,7 @@ Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 
 ![figuur](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
 
-# Arduino code
+## Arduino code
 
 In het voorbeeld sturen we data door met een ESP8266 microcontroller (thing)
 naar Azure IOT-Central.
@@ -406,7 +406,7 @@ void loop() {
 }
 ```
 
-# Python op raspberry pi
+## Python op raspberry pi
 
 Bron: Dieter De Preester docent HoWest MCT
 
@@ -552,7 +552,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-# Node red
+## Node red
 
 In onderstaande voorbeeld wordt:
 
@@ -697,7 +697,7 @@ Pas eventueel de tijd aan om berichten door te sturen.
 
 ![figuur](./assets/9c32a337d0a7dada4b3c7615165feca3.png)
 
-# Alarmen instellen
+## Alarmen instellen
 
 Kies “Regels”
 
@@ -715,7 +715,7 @@ Kies om een nieuwe regel in te stellen. Druk op “+Nieuw”
 
 ![figuur](./assets/5b1dac18fa7509b086f33d4eeee7f2d5.png)
 
-# Gebruikers
+## Gebruikers
 
 De data kan zichtbaar gemaakt worden voor andere gebruikers. Kies “Beheer” en
 vervolgens “Gebruikers”
