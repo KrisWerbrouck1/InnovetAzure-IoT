@@ -271,6 +271,8 @@ Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 In het voorbeeld sturen we data door met een ESP8266 microcontroller (thing)
 naar Azure IOT-Central.
 
+![figuur](./assets/IoThubESP8266.png)
+
 De voorbeeldcode is gebaseerd op <https://github.com/Azure/iot-central-firmware>
 Download eventueel de volledige repository en unzip
 deze.![figuur](./assets/a91f4249a1bf3b1ccd47dc2fcbb2d639.png)
@@ -411,6 +413,8 @@ void loop() {
 In het voorbeeld sturen we data door met een ESP32 microcontroller (thing)
 naar Azure IOT-Central. Eveneens sturen we vanop het dashboard in Azure IoT-Central een actuator aan op de ESP32.
 
+![figuur](./assets/IoThubESP32.png)
+
 Download het voorbeeldprogramma van ...... (nog aan te vullen)
 
 De instellingen van het wifi netwerk en de verbinding met Azure is mogelijk in de config.h file.
@@ -448,6 +452,11 @@ arduino code in.
 
 ## Python op raspberry pi
 
+In het voorbeeld sturen we data door met een Raspberry Pi (thing)
+naar Azure IOT-Central. Eveneens sturen we vanop het dashboard in Azure IoT-Central een actuator aan op de Raspbery Pi.
+
+![figuur](./assets/IoThubRaspberryPi.png)
+
 Bron: Dieter De Preester docent HoWest MCT
 
 ## Installatie Azure-iot-device
@@ -466,17 +475,28 @@ arduino code in.
 
 ![figuur](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
 
-Een voorbeeldprogramma waarbij een random temperatuur doorgezonden wordt. Indien
+Een voorbeeldprogramma waarbij een random temperatuur en een random luchtvochtig doorgezonden wordt. Indien
 je andere waardes wil doorsturen in een praktische toepassing pas je volgende
 stukje code aan:
 
 ```python
             temp = random.randint(0, 100)
-            data = {"temperature" :  temp }
+            vocht = random.randint(0,100)
+            data = {"temperatuur" :  temp, "luchtvochtigheid" : vocht }
 ```
 
-Een actuator op de raspberry pi aansturen via het dashboard is mogelijk met volgende code
+Een actuator (led verbonden met GPIO pin 18) op de raspberry pi aansturen via het dashboard is mogelijk met volgende code
 
+```python
+    if method_request.name == "ledOn":
+        print("Led On")
+        led.on()
+    elif method_request.name =="ledOff":
+        print ("Led Off")
+        led.off()
+    else:
+        print("Received unknown method: " + method_request.name)
+```
 
 
 De totale code:
@@ -489,6 +509,10 @@ from azure.iot.device import MethodResponse
  
 import random
 import json
+
+import gpiozero as io
+
+led = io.LED(18)
 
 id_scope = ''
 device_id = ''
@@ -519,16 +543,14 @@ async def command_handler(method_request):
 
     # Determine how to respond to the command based on the IoT Hub direct method method name
     # which is the same as the IoT Central command name
-    if method_request.name == "StartSending":
-        # For an On request, set the color based on the payload
- 
-        print("StartSending")
-    elif method_request.name == "StopSending":
-        # For an Off request, set the color to 000000, which turns the pixels off
- 
-        print("StopSending")
-    else:
-        print("Received unknown method: " + method_request.name)
+    if method_request.name == "ledOn":
+        print("Led On")
+        led.on()
+    elif method_request.name =="ledOff":
+        print ("Led Off")
+        led.off()
+    else:
+        print("Received unknown method: " + method_request.name)
 
     # Method calls have to return a response so IoT Central knows it was handled correctly,
     # So send a 200 response to show we handled this
@@ -580,7 +602,8 @@ async def main():
     async def main_loop():
         while True:
             temp = random.randint(0, 100)
-            data = {"temperature" :  temp }
+            vocht = random.randint(0,100)
+            data = {"temperatuur" :  temp, "luchtvochtigheid" : vocht }
             await device_client.send_message(json.dumps(data))
             print(json.dumps(data))
             await asyncio.sleep(5)
@@ -602,11 +625,10 @@ In onderstaande voorbeeld wordt:
 
 -   data (temperatuur, luchtvochtigheid en luchtdruk) afkomstig van het sense
     HAT bord verzonden vanuit node red op een rapsberry pi naar IoT Central.
-
 -   De leds op het sense HAT bediend vanuit het IoT-Central dashboard
 
+![figuur](./assets/IoThubRaspberryPi.png)
 ![figuur](./assets/619de9b9928d99030229eaaf8f9cae1f.png)
-
 ![figuur](./assets/5dbc26e1f3d6d92aeb846cc40d746baa.png)
 
 De uitwerking is gebaseerd op volgende document
