@@ -266,7 +266,7 @@ Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 
 ![figuur](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
 
-## Arduino code
+## ESP8266 arduino
 
 In het voorbeeld sturen we data door met een ESP8266 microcontroller (thing)
 naar Azure IOT-Central.
@@ -406,6 +406,46 @@ void loop() {
 }
 ```
 
+## ESP32 arduino
+
+In het voorbeeld sturen we data door met een ESP32 microcontroller (thing)
+naar Azure IOT-Central. Eveneens sturen we vanop het dashboard in Azure IoT-Central een actuator aan op de ESP32.
+
+Download het voorbeeldprogramma van ...... (nog aan te vullen)
+
+De instellingen van het wifi netwerk en de verbinding met Azure is mogelijk in de config.h file.
+
+Vul de gegevens van het wifi netwerk in:
+
+```cpp
+#define WIFI_SSID "<ENTER WIFI SSID HERE>"
+#define WIFI_PSK "<ENTER WIFI PASSWORD HERE>"
+```
+Zorg dat IOT_CENTRAL op true staat.
+
+```cpp
+#define IOT-Central true
+```
+
+De volgende delen code zijn afhankelijk van de instellingen in Azure IOT-central
+
+```cpp
+const char* SCOPE_ID = "<ENTER SCOPE ID HERE>";
+const char* DEVICE_ID = "<ENTER DEVICE ID HERE>";
+const char* DEVICE_KEY = "<ENTER DEVICE primary/secondary KEY HERE>";
+```
+
+De gegevens van het apparaat zijn te vinden in IoT-Central onder « Verbinding
+met »:
+
+![figuur](./assets/a959263696de15863df868ee3a3b996d.png)
+
+Vul het « id-bereik », de « Apparaat-id » en de « primaire sleutel » in de
+arduino code in.
+
+![figuur](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
+
+
 ## Python op raspberry pi
 
 Bron: Dieter De Preester docent HoWest MCT
@@ -434,6 +474,10 @@ stukje code aan:
             temp = random.randint(0, 100)
             data = {"temperature" :  temp }
 ```
+
+Een actuator op de raspberry pi aansturen via het dashboard is mogelijk met volgende code
+
+
 
 De totale code:
 
