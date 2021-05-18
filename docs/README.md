@@ -19,7 +19,7 @@ server staat echter niet bij je thuis maar in een datacenter.
 
 Enkele voorbeelden van datacenters bij Microsoft:
 
-<https://www.youtube.com/watch?v=lMWBBCNaDB0>
+<https://www.youtube.com/watch?v=80aK2_iwMOs>
 
 <https://www.youtube.com/watch?v=9nLD7bc5O1g>
 
