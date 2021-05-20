@@ -2,9 +2,10 @@
 
 ## Doelstelling
 
-In deze cursus gaan we data afkomstig van een IoT-device (microcontroller,
-raspberry pi, ..) bewaren en visualiseren op een dashboard. Eveneens is het
-mogelijk een actuator te bedienen vanop het dashboard.
+* Visualiseren op een dashboard van data afkomstig van een IoT-device (microcontroller of Raspberry Pi).
+* Actuator op een IoT-device aansturen met een dashboard.
+Als platform wordt gebruik gemaakt van Azure Central van Microsoft.
+
 
 ![figuur](./assets/08f05638e9d367934c610eb63ad1608d.png)
 
