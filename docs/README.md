@@ -5,7 +5,7 @@
 * Visualiseren op een dashboard van data afkomstig van een IoT-device (microcontroller of Raspberry Pi).
 * Actuatoren op een IoT-device aansturen met een dashboard.
 
-Er wordt gebruik gemaakt van Azure Central van Microsoft.
+Er wordt gebruik gemaakt van Azure IoT-Central van Microsoft.
 
 
 ![figuur](./assets/08f05638e9d367934c610eb63ad1608d.png)
