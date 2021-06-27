@@ -55,7 +55,7 @@ Meer uitleg over cloud computing kan je nalezen op
 
 Er zijn een aantal modellen mogelijk. Zowel SaaS (Software as a Service), Paas
 (Platform as a Service) en IaaS (Infrastructure as a Service) zijn mogelijk met
-Azure
+Azure.
 
 ![figuur](./assets/bef1673d6514288c44d8c850866a80d3.png)
 
@@ -89,7 +89,7 @@ Vul je telefoonnummer in als verificatie.
 
 ![figuur](./assets/2732bef4b83dadd26be838012d396e03.png)
 
-Registreer je
+Registreer je.
 
 ![figuur](./assets/74ab47a78c5de8598fba159945c342e5.png)
 
@@ -102,15 +102,15 @@ Ga akkoord met de voorwaarden.
 Wanneer je iets wil maken in Azure (Virtuele server, IoT-Hub, IoT-Central,
 database, …) moet er een resourcegroep aangemaakt worden.
 
-Kies + Een resource maken
+Kies "+ Een resource maken".
 
 ![figuur](./assets/cb91768b6e0b4b6cc18e4d624a823e99.png)
 
-Geef in het zoekvenster Resourcegroep in
+Geef in het zoekvenster "Resourcegroep" in.
 
 ![figuur](./assets/b52c17b676b69883eb728421a18bc46f.png)
 
-Klik op Maken
+Klik op Maken.
 
 ![figuur](./assets/fbfe568b86a3355d54e094b270a98848.png)
 
@@ -119,7 +119,7 @@ resourcegroep te bewaren.
 
 ![figuur](./assets/ce8a9ffb4e6c4d51587da3705d09f7b3.png)
 
-Klik vervolgens op Beoordelen en maken.
+Klik vervolgens op "Beoordelen en maken".
 
 ![figuur](./assets/2def2ce6162b4121b9379a904c0aaf53.png)
 
@@ -127,9 +127,12 @@ Klik vervolgens op Beoordelen en maken.
 
 Azure IoT-Central maakt gebruik van het SaaS (Software as a Service) model. In
 deze cursus stuurt een IoT-apparaat (ESP8266, ESP32 of raspberry pi) data door
-naar Azure IoT-Cental. De data wordt vervolgens weergegeven op een dashboard.
-Nadien ben je in staat om data met een andere sensor door te sturen naar
-IoT-Central en de data weer te geven op het dashboard.
+naar Azure IoT-Cental. De data (random temperatuur en luchtvochtigheid) wordt vervolgens weergegeven op een dashboard in je browser.
+
+Eveneens wordt een actuator op het IoT-apparaat (led) bediend vanuit het dashboard.
+
+Na het realiseren van dit voorbeeld ben je in staat om in combinatie met de andere cursussen op <https://stem-ict.be/> data afkomstig van een sensor door te sturen naar
+IoT-Central en actuatoren aan te sturen.
 
 ![figuur](./assets/9bfd053cc105f0726f41db12e536affa.png)
 
@@ -150,11 +153,11 @@ Geef in het zoekvenster “IoT Central application” in:
 
 ![figuur](./assets/e5f1aadfd57d3d72d70ee33dd21c2308.png)
 
-Klik op Maken.
+Klik op "Maken".
 
 ![figuur](./assets/ab75efa84350579f76ebd08fe39b20c0.png)
 
-Vul een zelfgekozen Resourcenaam in. De URL wordt vervolgens gebaseerd op de
+Vul een zelfgekozen Resourcenaam in. De URL van je aangemaakte IoT-Central applicatie is gebaseerd op je zelfgekozen
 Resourcenaam. Selecteer het studentenabonnement en de vooraf aangemaakte
 Resourcegroep.
 
@@ -167,7 +170,7 @@ gelukt is.
 
 ![figuur](./assets/a434d2b2b4a8e688809a27e014c0b1e2.png)
 
-Selecteer in de Azure portal in IoT-Central-toepassing.
+Selecteer in de Azure portal de zelf aangemaakte IoT-Central-toepassing.
 
 ![figuur](./assets/66b884628551edd9a134b979ca7350ec.png)
 
@@ -183,7 +186,7 @@ Je komt op de portal van de aangemaakte IoT Central toepassing.
 
 Voor een nieuw IoT-device moet eerst een sjabloon apparaat aangemaakt worden.
 
-Maak een Apparaatsjabloon aan door op Apparaatsjablonen te klikken in de linker
+Maak een Apparaatsjabloon aan door op "Apparaatsjablonen" te klikken in de linker
 balk. Kies vervolgens “+Nieuw”.
 
 ![figuur](./assets/8a80e6d102e0a5510db3cf642a032205.png)
@@ -209,7 +212,7 @@ Wanneer het sjabloon aangemaakt is krijg je bevestiging.
 
 We voorzien voor het apparaat een interface. Een interface wordt gebruikt om een
 sensorwaarde in te lezen of een actuator aan te sturen. In het voorbeeld
-voorzien we het inlezen van 2 sensorenwaardes.
+voorzien we het inlezen van 2 sensorenwaardes en aansturen van 1 actuator.
 
 Klik op Aangepast model.
 
@@ -227,9 +230,9 @@ voegen.
 
 ![figuur](./assets/eeda3ca3103e3e12e53827f9be4a4f81.png)
 
-Indien we een actuator toevoegen moet je “Telemetry” aanpassen naar “Command”.
+Indien we een actuator toevoegen moet je “Telemetry” aanpassen naar “Command”. In het voorbeeld schakelen we een led in en uit. Voorzie hiervoor 2 commando's.
 
-![figuur](./assets/c62fd1869e0769aeac5d9e6ec26e279f.png)
+![figuur](./assets/InterfaceToevoegen.png)
 
 Klik op “Opslaan” om de interface te bewaren.
 
@@ -239,10 +242,15 @@ Kies onder “Weergave” op “Het apparaat visualiseren”.
 
 ![figuur](./assets/1d5a1daa3267a67f3e49e019d9fe7211.png)
 
-Voeg de grafische weergave toe onder Telemetrie. Klik vervolgens op “Tegel
+Om sensordata grafisch weer te geven kies je de waarde onder Telemetrie. Klik vervolgens op “Tegel
 toevoegen”.
 
 ![figuur](./assets/120b5dc777ec7ba70dfb15719c165829.png)
+
+Om een actuator vanop het dashboard te bedienen kies je het commando onder Opdrachten. Klik vervolgens op “Tegel
+toevoegen”.
+
+![figuur](./assets/ActuatorGrafischWeergeven.png)
 
 Wanneer alles waardes toegevoegd zijn klik je op “Opslaan”.
 
@@ -465,6 +473,10 @@ Bron: Dieter De Preester docent HoWest MCT
 
 Installeer op de raspberry pi met pip3 de azure-iot-device lib.
 
+```cmd
+            pip3 install azure-iot-device
+```
+
 ![figuur](./assets/111c7ae4a7e3c9213cb67994980e9729.png)
 
 De gegevens van het apparaat zijn te vinden in IoT-Central onder « Verbinding
@@ -477,7 +489,7 @@ arduino code in.
 
 ![figuur](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
 
-Een voorbeeldprogramma waarbij een random temperatuur en een random luchtvochtig doorgezonden wordt. Indien
+In het voorbeeldprogramma wordt een random temperatuur en een random luchtvochtig doorgezonden. Indien
 je andere waardes wil doorsturen in een praktische toepassing pas je volgende
 stukje code aan:
 
