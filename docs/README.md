@@ -47,7 +47,7 @@ De gebruiker moet enkel over een computer met internettoegang en een browser
 beschikken. Via een portal krijgt de gebruiker toegang tot de nodige servers.
 
 Meer uitleg over cloud computing kan je nalezen op
-<https://www.true.nl/blog/wat-is-azure/>
+[https://www.true.nl/blog/wat-is-azure/] (<https://www.true.nl/blog/wat-is-azure/>)
 
 ## De portal van de azure cloud omgeving
 
@@ -77,7 +77,7 @@ In dit cloudservicemodel beheert de cloudprovider alle aspecten van de toepassin
 ##  Registratie Azure
 
 Een gratis studentenaccount kan aangemaakt worden op
-<https://azure.microsoft.com/nl-nl/free/students/>
+[<https://azure.microsoft.com/nl-nl/free/students/>](<https://azure.microsoft.com/nl-nl/free/students/>)
 
 Registreer je met je e-mailadres van school. Wanneer je registreert met een
 ander e-mailadres, krijg je de vraag om met het e-mailadres van de school te
@@ -131,7 +131,7 @@ naar Azure IoT-Cental. De data (random temperatuur en luchtvochtigheid) wordt ve
 
 Eveneens wordt een actuator op het IoT-apparaat (led) bediend vanuit het dashboard.
 
-Na het realiseren van dit voorbeeld ben je in staat om in combinatie met de andere cursussen op <https://stem-ict.be/> data afkomstig van een sensor door te sturen naar
+Na het realiseren van dit voorbeeld ben je in staat om in combinatie met de andere cursussen op [https://stem-ict.be/](<https://stem-ict.be/>) data afkomstig van een sensor door te sturen naar
 IoT-Central en actuatoren aan te sturen.
 
 ![figuur](./assets/9bfd053cc105f0726f41db12e536affa.png)
@@ -427,7 +427,8 @@ naar Azure IOT-Central. Eveneens sturen we vanop het dashboard in Azure IoT-Cent
 
 ![figuur](./assets/IoThubESP32.png)
 
-Download het voorbeeldprogramma van volgende github pagina. Opteer eventueel om de volledige code als zip file te downloaden.
+Download het voorbeeldprogramma van volgende github pagina. [https://github.com/VTITorhout/IoT_ESP_Azure](<https://github.com/VTITorhout/IoT_ESP_Azure>)
+Opteer eventueel om de volledige code als zip file te downloaden.
 
 De instellingen van het wifi netwerk en de verbinding met Azure is mogelijk in de config.h file.
 
