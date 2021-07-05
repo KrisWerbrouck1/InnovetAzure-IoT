@@ -428,6 +428,7 @@ naar Azure IOT-Central. Eveneens sturen we vanop het dashboard in Azure IoT-Cent
 ![figuur](./assets/IoThubESP32.png)
 
 Download het voorbeeldprogramma van volgende github pagina. [https://github.com/VTITorhout/IoT_ESP_Azure](<https://github.com/VTITorhout/IoT_ESP_Azure>)
+
 Opteer eventueel om de volledige code als zip file te downloaden.
 
 De instellingen van het wifi netwerk en de verbinding met Azure is mogelijk in de config.h file.
@@ -445,7 +446,7 @@ In het voorbeeld is de ingebouwde led van het Firebeetle ESP32 board de actuator
 #define DBG_PIN	2					            //LED is connected to GPIO2 on the Firebeetle ESP32 board
 ```
 
-Zorg dat IOT_CENTRAL op true staat.
+Zorg dat IOT-Central op true staat.
 
 ```cpp
 #define IOT-Central true
