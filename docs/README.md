@@ -234,7 +234,12 @@ Indien we een actuator toevoegen moet je “Telemetry” aanpassen naar “Comma
 
 ![figuur](./assets/InterfaceToevoegen.png)
 
+Bij het programma voor de ESP wordt gebruik gemaakt van polling. Hierdoor is de ESP niet constant verbonden. Schakel daarom "Wachtrij indien offline" in.
+
+![figuur](./assets/wachtrijIndienOffline.png)
+
 Klik op “Opslaan” om de interface te bewaren.
+
 
 ## Visuele weergave
 
