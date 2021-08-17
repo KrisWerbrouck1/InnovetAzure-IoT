@@ -262,7 +262,7 @@ Stel de titel in, kies het weergavebereik, het interval en klik vervolgens op "+
 ![figuur](./assets/mogelijkheidToevoegen.png)
 
 Kies uit de Telemetrie" de mogelijkheid die grafisch moet weergeveven worden.
-![figuur](./assets/telemetrieToevoegen.png)
+![figuur](./assets/TelemetrieToevoegen.png)
 
 Klik vervolgens op "Bijwerken".
 
