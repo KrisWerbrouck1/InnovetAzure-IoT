@@ -243,23 +243,30 @@ Klik op “Opslaan” om de interface te bewaren.
 
 ## Visuele weergave
 
-Kies onder “Weergave” op “Het apparaat visualiseren”.
+Kies onder “Weergaven” voor “Het apparaat visualiseren”.
 
 ![figuur](./assets/1d5a1daa3267a67f3e49e019d9fe7211.png)
 
-Om sensordata grafisch weer te geven kies je de waarde onder Telemetrie. Klik vervolgens op “Tegel
-toevoegen”.
+We kiezen in het eerste voorbeeld voor een lijndiagram om de telemetrie data weer te geven. (voorbeeld temperatuur, luchtvochtigheid, ...)
 
-![figuur](./assets/120b5dc777ec7ba70dfb15719c165829.png)
+![figuur](./assets/lijndiagram.png)
 
-Om een actuator vanop het dashboard te bedienen kies je het commando onder Opdrachten. Klik vervolgens op “Tegel
-toevoegen”.
+Klik vervolgens op "Tegel toevoegen".
 
-![figuur](./assets/ActuatorGrafischWeergeven.png)
+![figuur](./assets/tegelToevoegen.png)
 
-Wanneer alles waardes toegevoegd zijn klik je op “Opslaan”.
+Klik vervolgens op "Configureren".
+![figuur](./assets/configureren.png)
 
-![figuur](./assets/f310f36306024fa8d8cb98f81e18aae0.png)
+Stel de titel in, kies het weergavebereik, het interval en klik vervolgens op "+Mogelijkheid".
+![figuur](./assets/mogelijkheidToevoegen.png)
+
+Kies uit de Telemetrie" de mogelijkheid die grafisch moet weergeveven worden.
+![figuur](./assets/telemetrieToevoegen.png)
+
+Klik vervolgens op "Bijwerken".
+
+Voeg eventueel nog andere telemetrie of commando's toe.
 
 Voor het sjabloon bruikbaar is moet dit gepubliceerd worden. Klik hiervoor op
 “Publiceren”.
