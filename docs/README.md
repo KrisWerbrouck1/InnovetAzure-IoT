@@ -220,7 +220,7 @@ Klik op Aangepast model.
 
 Klik op “Mogelijkheid toevoegen aan standaardonderdeel” en vul de gekozen
 weergavenaam in. Wanneer je sensordata wil inlezen staat “Type van …” op
-Telemetry. Het is eveneens mogelijk een eenheid toe te voegen. Dit is echter
+Telemetry. Kies een eenheid uit de lijst. Dit is echter
 geen verplichting.
 
 ![figuur](./assets/36e61f89bef7a980dbe11677908227fe.png)
@@ -234,7 +234,7 @@ Indien we een actuator toevoegen moet je “Telemetry” aanpassen naar “Comma
 
 ![figuur](./assets/InterfaceToevoegen.png)
 
-Bij het programma voor de ESP wordt gebruik gemaakt van polling. Hierdoor is de ESP niet constant verbonden. Schakel daarom "Wachtrij indien offline" in.
+Bij het programma voor de ESP wordt gebruik gemaakt van polling. Hierdoor is de ESP niet constant verbonden. Schakel daarom "Wachtrij indien offline" in bij beide commando's. In het voorbeeld ledOn en ledOff.
 
 ![figuur](./assets/wachtrijIndienOffline.png)
 
@@ -261,12 +261,12 @@ Klik vervolgens op "Configureren".
 Stel de titel in, kies het weergavebereik, het interval en klik vervolgens op "+Mogelijkheid".
 ![figuur](./assets/mogelijkheidToevoegen.png)
 
-Kies uit de Telemetrie" de mogelijkheid die grafisch moet weergeveven worden.
+Kies uit de Telemetrie de mogelijkheid die grafisch moet weergegeven worden.
 ![figuur](./assets/TelemetrieToevoegen.png)
 
 Klik vervolgens op "Bijwerken".
 
-Voeg eventueel nog andere telemetrie of commando's toe.
+Voeg eventueel nog andere telemetrie toe door een type tegel (voorbeeld Lijndiagram te selecteren) en vervolgens op "Tegel toevoegen" te klikken.
 
 Voor het sjabloon bruikbaar is moet dit gepubliceerd worden. Klik hiervoor op
 “Publiceren”.
@@ -288,150 +288,6 @@ Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 
 ![figuur](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
 
-## ESP8266 arduino
-
-In het voorbeeld sturen we data door met een ESP8266 microcontroller (thing)
-naar Azure IOT-Central.
-
-![figuur](./assets/IoThubESP8266.png)
-
-De voorbeeldcode is gebaseerd op <https://github.com/Azure/iot-central-firmware>
-Download eventueel de volledige repository en unzip
-deze.![figuur](./assets/a91f4249a1bf3b1ccd47dc2fcbb2d639.png)
-
-De voorbeeldcode voor de esp8266 is te vinden onder het pad ESP8266. Het arduino
-bestand is esp8266.ino. De nodige bestanden in de scr map moeten zeker altijd
-aanwezig zijn bij het arduino bestand.
-
-Vul de gegevens van het wifi netwerk in:
-
-```cpp
-#define WIFI_SSID "<ENTER WIFI SSID HERE>"
-#define WIFI_PASSWORD "<ENTER WIFI PASSWORD HERE>"
-```
-
-De volgende delen code zijn afhankelijk van de instellingen in Azure IOT-central
-
-```cpp
-const char* SCOPE_ID = "<ENTER SCOPE ID HERE>";
-const char* DEVICE_ID = "<ENTER DEVICE ID HERE>";
-const char* DEVICE_KEY = "<ENTER DEVICE primary/secondary KEY HERE>";
-```
-
-De gegevens van het apparaat zijn te vinden in IoT-Central onder « Verbinding
-met »:
-
-![figuur](./assets/a959263696de15863df868ee3a3b996d.png)
-
-Vul het « id-bereik », de « Apparaat-id » en de « primaire sleutel » in de
-arduino code in.
-
-![figuur](./assets/abbd1b0a8031e536c1ba65db33a22d13.png)
-
-Een voorbeeldprogramma met 2 tellers. Indien je andere waardes wil doorsturen in
-een praktische toepassing pas je volgende stukje code aan:
-
-```cpp
-pos = snprintf(msg, sizeof(msg) - 1, "{\"teller1\": %d, \"teller2\":%d}", teller1, teller2);
-```
-
-De totale code:
-
-```cpp
-// Copyright (c) Microsoft. All rights reserved.
-// Licensed under the MIT license. See LICENSE file in the project root for full
-// license information.
-
-// This gist is based on https://github.com/Azure/iot-central-firmware/blob/master/ESP8266/ESP8266.ino
-
-#include <ESP8266WiFi.h>
-#include "src/iotc/common/string_buffer.h"
-#include "src/iotc/iotc.h"
-
-#define WIFI_SSID "SSID"
-#define WIFI_PASSWORD "PASW"
-
-const char* SCOPE_ID = "SCOPE_ID";
-const char* DEVICE_ID = "DEVICE_ID";
-const char* DEVICE_KEY = "DEVICE_KEY";
-
-int teller1=0;
-int teller2=0;
-
-void on_event(IOTContext ctx, IOTCallbackInfo* callbackInfo);
-#include "src/connection.h"
-
-void on_event(IOTContext ctx, IOTCallbackInfo* callbackInfo) {
-  // ConnectionStatus
-  if (strcmp(callbackInfo->eventName, "ConnectionStatus") == 0) {
-    LOG_VERBOSE("Is connected ? %s (%d)",
-                callbackInfo->statusCode == IOTC_CONNECTION_OK ? "YES" : "NO",
-                callbackInfo->statusCode);
-    isConnected = callbackInfo->statusCode == IOTC_CONNECTION_OK;
-    return;
-  }
-
-  // payload buffer doesn't have a null ending.
-  // add null ending in another buffer before print
-  AzureIOT::StringBuffer buffer;
-  if (callbackInfo->payloadLength > 0) {
-    buffer.initialize(callbackInfo->payload, callbackInfo->payloadLength);
-  } 
-  LOG_VERBOSE("- [%s] event was received. Payload => %s\n",
-              callbackInfo->eventName, buffer.getLength() ? *buffer : "EMPTY");
-  
-  if (strcmp(callbackInfo->eventName, "Command") == 0) {
-    LOG_VERBOSE("- Command name was => %s\r\n", callbackInfo->tag);
-  }
-  
-  if (strcmp(callbackInfo->eventName, "SettingsUpdated") == 0) {
-    LOG_VERBOSE("- Setting name was => %s\r\n", callbackInfo->tag);
-  }
-}
-
-void setup() {
-  Serial.begin(9600);
-
-  connect_wifi(WIFI_SSID, WIFI_PASSWORD);
-  connect_client(SCOPE_ID, DEVICE_ID, DEVICE_KEY);
-
-  if (context != NULL) {
-    lastTick = 0;  // set timer in the past to enable first telemetry a.s.a.p
-  }
-}
-
-void loop() {
-  if (isConnected) {
-    unsigned long ms = millis();
-    if (ms - lastTick > 5000) {  // send telemetry every 5 seconds
-      char msg[128] = {0};
-      int pos = 0, errorCode = 0;
-
-      lastTick = ms;
-      teller1++;
-      teller2=teller2+2;
-       
-      pos = snprintf(msg, sizeof(msg) - 1, "{\"teller1\": %d, \"teller2\":%d}", teller1, teller2);
-      errorCode = iotc_send_telemetry(context, msg, pos);
-
-      msg[pos] = 0;
-
-      if (errorCode != 0) {
-        LOG_ERROR("Sending message has failed with error code %d", errorCode);
-      }
-    }
-
-    iotc_do_work(context);  // do background work for iotc
-  } else {
-    iotc_free_context(context);
-    context = NULL;
-    connect_client(SCOPE_ID, DEVICE_ID, DEVICE_KEY);
-  }
-}
-```
-
-
-
 ## ESP8266 en ESP32 arduino
 
 In het voorbeeld sturen we data door met een ESP8266 of ESP32 microcontroller (thing)
@@ -448,8 +304,8 @@ De instellingen van het wifi netwerk en de verbinding met Azure is mogelijk in d
 Vul de gegevens van het wifi netwerk in:
 
 ```cpp
-#define WIFI_SSID "<ENTER WIFI SSID HERE>"
-#define WIFI_PSK "<ENTER WIFI PASSWORD HERE>"
+#define WIFI_SSID "YOUR-SSID-HERE"
+#define WIFI_PSK "YOUR-PSWD-HERE"
 ```
 
 In het voorbeeld is de ingebouwde led van het Firebeetle ESP32 board de actuator die verbonden is met pin 2. Pas dit indien nodig aan bij een ander bord.
@@ -461,7 +317,7 @@ In het voorbeeld is de ingebouwde led van het Firebeetle ESP32 board de actuator
 Zorg dat IOT-Central op true staat.
 
 ```cpp
-#define IOT-Central true
+#define IOT_CENTRAL true
 ```
 Met volgende regel code kan ingesteld worden om de hoeveel tijd info naar Azure verzonden wordt.
 
@@ -469,8 +325,8 @@ Met volgende regel code kan ingesteld worden om de hoeveel tijd info naar Azure 
 #define IOT_UPDATE	300				//send new message to cloud every x seconds
 ```
 
-Via polling wordt gecontrolleerd of de toestand van een acutator moet veranderen. Met volgende regel code wordt ingesteld
-om de hoeveel seconden gecontrolleerd wordt.
+Via polling wordt gecontroleerd of de toestand van een acutator moet veranderen. Met volgende regel code wordt ingesteld
+om de hoeveel seconden gecontroleerd wordt.
 
 ```cpp
 #define POLL_TIME	60				//check for new C2D message every x seconds
