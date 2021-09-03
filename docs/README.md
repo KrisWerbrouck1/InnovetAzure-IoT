@@ -212,7 +212,7 @@ Wanneer het sjabloon aangemaakt is krijg je bevestiging.
 
 We voorzien voor het apparaat een interface. Een interface wordt gebruikt om een
 sensorwaarde in te lezen of een actuator aan te sturen. In het voorbeeld
-voorzien we het inlezen van 2 sensorenwaardes en aansturen van 1 actuator.
+voorzien we het inlezen van 2 sensorenwaardes (temp en hum) en aansturen van 1 actuator waarvoor 2 commando's nodig zijn (LedOn en LedOff).
 
 Klik op Aangepast model.
 
@@ -223,20 +223,20 @@ weergavenaam in. Wanneer je sensordata wil inlezen staat “Type van …” op
 Telemetry. Kies een eenheid uit de lijst. Dit is echter
 geen verplichting.
 
-![figuur](./assets/36e61f89bef7a980dbe11677908227fe.png)
+![figuur](./assets/toevoegenTelemetry1.png)
 
 Klik op “+ Een mogelijkheid toevoegen” om de 2de waarde van de interface toe te
 voegen.
 
-![figuur](./assets/eeda3ca3103e3e12e53827f9be4a4f81.png)
+![figuur](./assets/toevoegenTelemetry2.png)
 
 Indien we een actuator toevoegen moet je “Telemetry” aanpassen naar “Command”. In het voorbeeld schakelen we een led in en uit. Voorzie hiervoor 2 commando's.
 
-![figuur](./assets/InterfaceToevoegen.png)
+![figuur](./assets/toevoegenCommand1.png)
 
 Bij het programma voor de ESP wordt gebruik gemaakt van polling. Hierdoor is de ESP niet constant verbonden. Schakel daarom "Wachtrij indien offline" in bij beide commando's. In het voorbeeld ledOn en ledOff.
 
-![figuur](./assets/wachtrijIndienOffline.png)
+![figuur](./assets/toevoegenCommand2.png)
 
 Klik op “Opslaan” om de interface te bewaren.
 
@@ -267,6 +267,8 @@ Kies uit de Telemetrie de mogelijkheid die grafisch moet weergegeven worden.
 Klik vervolgens op "Bijwerken".
 
 Voeg eventueel nog andere telemetrie toe door een type tegel (voorbeeld Lijndiagram te selecteren) en vervolgens op "Tegel toevoegen" te klikken.
+
+Wanneer alle telemetry gegevens aanwezig zijn klik je op "opslaan".
 
 Voor het sjabloon bruikbaar is moet dit gepubliceerd worden. Klik hiervoor op
 “Publiceren”.
