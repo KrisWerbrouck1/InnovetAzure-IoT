@@ -279,6 +279,51 @@ Klik nogmaals op “Publiceren”.
 
 ![figuur](./assets/9ae022fd294fe5372c4a1edde08c200a.png)
 
+## Importeren van een apparaatsjabloon uit een json file
+
+Het is mogelijk een apparaat sjabloon te importeren als json file. Download volgende json file:
+
+[https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json](<https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json>)
+
+Ga naar “Apparaatsjablonen” in je Central application.
+Klik bovenaan op “nieuw”. 
+
+![figuur](./assets/Import1.png)
+
+Kies voor “IoT-apparaat”
+Klik vervolgens onderaan op “Volgende: Aanpassen”.
+
+![figuur](./assets/Import2.png)
+
+Geef een naam aan het apparaat (vrij te kiezen) en klik vervolgens op “Volgende: Beoordelen”.
+
+![figuur](./assets/Import3.png)
+
+Klik vervolgens op “Maken”.
+
+![figuur](./assets/Import4.png)
+
+Op de volgende pagina kiezen we nu voor “Een model importeren”. Dit is anders dan bij de normale stappen waar we zelf ons model opstellen.
+
+![figuur](./assets/Import5.png)
+
+Via het popup venster selecteren we ons model die beschreven staat als een JSON file.
+
+![figuur](./assets/Import6.png)
+
+Op de volgende pagina kiezen we nu voor “Een model importeren”. Dit is anders dan bij de normale stappen waar we zelf ons model opstellen.
+
+![figuur](./assets/Import7.png)
+
+Via het popup venster selecteren we ons model die beschreven staat als een JSON file.
+
+![figuur](./assets/Import8.png)
+
+Als alles goed gaat is ons volledige model meteen klaar.
+
+![figuur](./assets/Import9.png)
+
+
 ## Aanmaken apparaat
 
 Maak vanuit het sjabloon een nieuw apparaat aan. Klik op “+ Nieuw” in Alle
@@ -290,16 +335,6 @@ Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 
 ![figuur](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
 
-## Importeren van een apparaat
-
-Het is mogelijk een apparaat sjabloon te importeren als json file. Download volgende json file:
-
-[https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json](<https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json>)
-
-Ga naar “Apparaatsjablonen” in je Central application
-Klik bovenaan op “nieuw” 
-
-![figuur](./assets/Import1.png)
 
 ## ESP8266 en ESP32 arduino
 
