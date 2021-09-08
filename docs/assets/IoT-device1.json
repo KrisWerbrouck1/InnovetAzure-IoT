@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "dtmi:innovetdemo:IoTDevicebz;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:innovetdemo:IoTDevicebz:temp;1",
+        "@type": [
+          "Telemetry",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "temp"
+        },
+        "name": "temp",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@id": "dtmi:innovetdemo:IoTDevicebz:hum;1",
+        "@type": [
+          "Telemetry",
+          "Humidity"
+        ],
+        "displayName": {
+          "en": "hum"
+        },
+        "name": "hum",
+        "schema": "double",
+        "unit": "percent"
+      },
+      {
+        "@id": "dtmi:innovetdemo:IoTDevicebz:ledOn;1",
+        "@type": "Command",
+        "displayName": {
+          "en": "ledOn"
+        },
+        "name": "ledOn",
+        "durable": true
+      },
+      {
+        "@id": "dtmi:innovetdemo:IoTDevicebz:ledOff;1",
+        "@type": "Command",
+        "displayName": {
+          "en": "ledOff"
+        },
+        "name": "ledOff",
+        "durable": true
+      }
+    ],
+    "displayName": {
+      "en": "IoT-device"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
+]

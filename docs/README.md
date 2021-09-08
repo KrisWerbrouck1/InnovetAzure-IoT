@@ -283,7 +283,7 @@ Klik nogmaals op “Publiceren”.
 
 Het is mogelijk een apparaat sjabloon te importeren als json file. Download volgende json file:
 
-[https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json](<https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json>)
+[https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device1.json](<https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device1.json>)
 
 Ga naar “Apparaatsjablonen” in je Central application.
 Klik bovenaan op “nieuw”. 
