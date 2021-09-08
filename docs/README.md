@@ -290,6 +290,17 @@ Selecteer het ontworpen Apparaatsjabloon, pas indien nodig de apparaatnaam aan.
 
 ![figuur](./assets/17ddfd2f71c7c15b2ef22d9515b004bc.png)
 
+## Importeren van een apparaat
+
+Het is mogelijk een apparaat sjabloon te importeren als json file. Download volgende json file:
+
+[https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json](<https://github.com/KrisWerbrouck1/InnovetAzure-IoT/tree/master/docs/assets/IoT-device.json>)
+
+Ga naar “Apparaatsjablonen” in je Central application
+Klik bovenaan op “nieuw” 
+
+![figuur](./assets/Import1.png)
+
 ## ESP8266 en ESP32 arduino
 
 In het voorbeeld sturen we data door met een ESP8266 of ESP32 microcontroller (thing)
